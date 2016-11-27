@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -28,6 +29,21 @@ public class SecondActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
     }
+
+//    @Override
+//    protected void onCreate(Bundle saveInstanceState) {
+//
+//        super.onCreate(saveInstanceState);
+//        setContentView(R.layout.activity_second);
+//
+//        String user = "ЖЫвотное";
+//        String gift = "дырку от бублика";
+//
+//        TextView infoTextView = (TextView)findViewById(R.id.about_content);
+//        infoTextView.setText(user + " , вам передали " + gift);
+//
+//    }
 
 }
