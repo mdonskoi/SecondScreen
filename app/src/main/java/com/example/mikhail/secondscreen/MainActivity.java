@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button aboutButton = (Button)findViewById(R.id.button);
         Button secondButton = (Button)findViewById(R.id.button2);
+        Button thirdButton = (Button)findViewById(R.id.button3);
 
         aboutButton.setOnClickListener(this);
         secondButton.setOnClickListener(this);
+        thirdButton.setOnClickListener(this);
 
     }
     public void onClick(View view) {
@@ -30,7 +32,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button2:Intent intentSecond = new Intent(MainActivity.this, SecondActivity.class);
         startActivity(intentSecond);
                 break;
+
+            case R.id.button3: Intent intentThird = new Intent(MainActivity.this, ThirdActivity.class);
+                startActivity(intentThird);
+
         }
+
+
+
 
 //        Intent intent = new Intent(MainActivity.this, AboutActivity.class);
 //        startActivity(intent);

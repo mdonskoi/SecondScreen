@@ -12,5 +12,8 @@
 
     <string name="about_title">О программе</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third_screen">ThirdScreen</string>
+
+    <string name="textViewInfo">ThirdScreen Text View Info</string>
 
 </resources>

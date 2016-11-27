@@ -33,8 +33,8 @@
 
     <TextView
         android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="275dp"
-        android:id="@+id/textView4" />
+        android:layout_width="290dp"
+        android:layout_height="282dp"
+        android:id="@+id/TextView" />
 
 </android.support.design.widget.CoordinatorLayout>
