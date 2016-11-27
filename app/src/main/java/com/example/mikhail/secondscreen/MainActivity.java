@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -25,16 +26,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void onClick(View view) {
 
+
+
+
+
         switch (view.getId()){
-            case R.id.button: Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-        startActivity(intent);
+            case R.id.button: Intent intentFirst = new Intent(MainActivity.this, AboutActivity.class);
+        startActivity(intentFirst);
                 break;
             case R.id.button2:Intent intentSecond = new Intent(MainActivity.this, SecondActivity.class);
         startActivity(intentSecond);
                 break;
 
-            case R.id.button3: Intent intentThird = new Intent(MainActivity.this, ThirdActivity.class);
-                startActivity(intentThird);
+            case R.id.button3: //Intent intentThird = new Intent(MainActivity.this, ThirdActivity.class);
+
+                EditText userEditText = (EditText)findViewById(R.id.editTextUser);
+                EditText giftEditText = (EditText)findViewById(R.id.editTextGift);
+
+                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+
+                intent.putExtra("username", userEditText.getText().toString());
+                intent.putExtra("gift", giftEditText.getText().toString());
+                startActivity(intent);
+
+
+                //  startActivity(intent);
+
+
+
+
 
         }
 
