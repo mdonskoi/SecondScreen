@@ -63,9 +63,22 @@
         android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextGift"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"
         android:id="@+id/button3"
-        android:onClick="onClick (MainActivity)" />
+        android:onClick="onClick (MainActivity)"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/editTextGift"
+        android:layout_alignRight="@+id/editTextGift"
+        android:layout_alignEnd="@+id/editTextGift"
+        android:layout_marginTop="30dp"
+        android:id="@+id/editTextFrom" />
 </RelativeLayout>
